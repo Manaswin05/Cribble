@@ -357,7 +357,7 @@ export const StudioPage = ({ isSidebarCollapsed: globalSidebarCollapsed, onToggl
   }, [contextMenu]);
 
   return (
-    <div className={`flex flex-col h-full overflow-hidden bg-[#f3f0ef] text-[#2f2e2e] transition-all duration-300 ${globalSidebarCollapsed ? '' : 'md:ml-64'}`}>
+    <div className={`flex flex-col h-full overflow-hidden bg-[#f3f0ef] text-[#2f2e2e] transition-all duration-300`}>
       {/* TOP BAR */}
       <header className="flex-shrink-0 h-12 flex items-center justify-between px-4 bg-white border-b border-[#afacac]/10 shadow-sm z-10">
         <div className="flex items-center gap-3">
