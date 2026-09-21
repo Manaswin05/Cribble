@@ -4,7 +4,6 @@
  */
 import { Bookmark, Plus } from 'lucide-react';
 import { motion } from 'motion/react';
-import { TopBar } from '../components/TopBar';
 import type { PageProps } from '../types';
 
 const savedItems = [
@@ -17,8 +16,6 @@ const savedItems = [
 export const SavedPage = ({ isSidebarCollapsed, onToggleSidebar }: PageProps) => {
   return (
     <div className={`pt-24 pb-12 px-6 bg-[#f9f6f5] min-h-screen transition-all duration-300`}>
-      <TopBar title="Saved Collections" onToggleSidebar={onToggleSidebar} isSidebarCollapsed={isSidebarCollapsed} />
-
       <main>
         <div className="mt-8 mb-12">
           <h1 className="font-serif text-4xl text-[#2f2e2e] mb-2">Your Library</h1>
