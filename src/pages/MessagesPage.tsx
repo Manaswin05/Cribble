@@ -36,7 +36,7 @@ export const MessagesPage = ({ isSidebarCollapsed, onToggleSidebar }: PageProps)
   };
 
   return (
-    <div className={`min-h-screen flex flex-col relative transition-all duration-300 ${isSidebarCollapsed ? '' : 'md:ml-64'}`}>
+    <div className={`min-h-screen flex flex-col relative transition-all duration-300`}>
       <TopBar title="Messages" onToggleSidebar={onToggleSidebar} isSidebarCollapsed={isSidebarCollapsed} />
       <div className="pt-20 flex-1 flex overflow-hidden">
         {/* Conversation History */}

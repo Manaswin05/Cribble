@@ -20,7 +20,7 @@ const artworks = [
 
 export const ExplorePage = ({ isSidebarCollapsed, onToggleSidebar }: PageProps) => {
   return (
-    <div className={`pt-24 pb-12 px-6 bg-[#f9f6f5] min-h-screen transition-all duration-300 ${isSidebarCollapsed ? '' : 'md:ml-64'}`}>
+    <div className={`pt-24 pb-12 px-6 bg-[#f9f6f5] min-h-screen transition-all duration-300`}>
       <TopBar onToggleSidebar={onToggleSidebar} isSidebarCollapsed={isSidebarCollapsed} />
 
       <main>

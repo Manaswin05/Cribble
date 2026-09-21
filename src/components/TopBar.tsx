@@ -19,9 +19,7 @@ export const TopBar = ({
 }: TopBarProps) => {
   return (
     <header
-      className={`fixed top-0 right-0 left-0 h-20 z-40 bg-[#f9f6f5]/80 backdrop-blur-xl flex justify-between items-center px-8 border-b border-[#afacac]/10 transition-all duration-300 ${
-        isSidebarCollapsed ? 'md:left-0' : 'md:left-64'
-      }`}
+      className={`fixed top-0 right-0 left-0 h-20 z-40 bg-[#f9f6f5]/80 backdrop-blur-xl flex justify-between items-center px-8 border-b border-[#afacac]/10 transition-all duration-300`}
     >
       <div className="flex items-center gap-x-4">
         {isSidebarCollapsed && onToggleSidebar && (
