@@ -4,7 +4,6 @@
  */
 import { Heart, Share2, Eye, MessageSquare, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
-import { TopBar } from '../components/TopBar';
 import type { PageProps } from '../types';
 
 const categories = ['All Media', 'Digital Art', 'UI/UX Design', 'Illustration', '3D Motion'];
@@ -20,9 +19,7 @@ const artworks = [
 
 export const ExplorePage = ({ isSidebarCollapsed, onToggleSidebar }: PageProps) => {
   return (
-    <div className={`pt-24 pb-12 px-6 bg-[#f9f6f5] min-h-screen transition-all duration-300 ${isSidebarCollapsed ? '' : 'md:ml-64'}`}>
-      <TopBar onToggleSidebar={onToggleSidebar} isSidebarCollapsed={isSidebarCollapsed} />
-
+    <div className={`pt-24 pb-12 px-6 bg-[#f9f6f5] min-h-screen transition-all duration-300`}>
       <main>
         <section className="mb-12 mt-8">
           <span className="text-[#6a37d4] font-bold text-[10px] uppercase tracking-widest mb-2 block">Curated Selection</span>

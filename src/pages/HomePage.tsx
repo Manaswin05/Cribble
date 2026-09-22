@@ -4,7 +4,6 @@
  */
 import { ArrowRight, Eye, Rocket } from 'lucide-react';
 import { motion } from 'motion/react';
-import { TopBar } from '../components/TopBar';
 import type { PageProps } from '../types';
 
 const featuredWorks = [
@@ -15,9 +14,7 @@ const featuredWorks = [
 
 export const HomePage = ({ isSidebarCollapsed, onToggleSidebar }: PageProps) => {
   return (
-    <div className={`pt-24 pb-12 px-6 bg-[#f9f6f5] min-h-screen transition-all duration-300 ${isSidebarCollapsed ? '' : 'md:ml-64'}`}>
-      <TopBar title="Cribble Home" onToggleSidebar={onToggleSidebar} isSidebarCollapsed={isSidebarCollapsed} />
-      
+    <div className={`pt-24 pb-12 px-6 bg-[#f9f6f5] min-h-screen transition-all duration-300`}>
       <main>
         <section className="mt-8 mb-16">
           <div className="relative h-[500px] rounded-3xl overflow-hidden group">
